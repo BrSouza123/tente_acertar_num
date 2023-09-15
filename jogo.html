@@ -1,0 +1,38 @@
+    <meta charset="UTF-8">
+    <body>
+    <script>
+        function pularlinha() {
+            document.write ("<br>");
+            document.write ("<br>");
+        }
+
+        function mostra(frase) {
+            document.write (frase);
+            pularlinha();
+        }
+
+    var numeropensado = Math.round(Math.random() * 10);
+
+    var tentativas = 1;
+
+    while (tentativas <= 3){
+        
+        var chute = parseInt(prompt("digite seu chute"));
+
+        if (chute == numeropensado) {
+
+            mostra("você ACERTOU o número pesado foi " + numeropensado);
+            break;
+        }  else  {
+
+            mostra("você ERROU!");
+
+            tentativas++
+
+        }
+
+        mostra ("FIM!")
+    }
+
+    </script>
+    </body>
